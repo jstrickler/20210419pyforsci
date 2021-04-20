@@ -38,5 +38,6 @@ def print_titles_and_names(data):
 def get_value(data, knight, field):
     return data[knight][field]
 
-main()
+if __name__ == '__main__':
+    main()
 
