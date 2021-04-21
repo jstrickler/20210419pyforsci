@@ -12,5 +12,6 @@ def next_prime(limit):
 
 
 np = next_prime(200)  # <4>
+print(np)
 for prime in np:  # <5>
     print(prime, end=' ')

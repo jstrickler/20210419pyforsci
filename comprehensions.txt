@@ -1,0 +1,12 @@
+
+LIST COMPREHENSION
+[expr for var ... in iterable ... if condition ...]
+
+GENERATOR EXPRESSION
+(expr for var ... in iterable ... if condition ...)
+
+DICTIONARY COMPREHENSION
+{key:value for var ... in iterable ... if condition ...}
+
+SET COMPREHENSION
+{expr for var ... in iterable ... if condition ...}
