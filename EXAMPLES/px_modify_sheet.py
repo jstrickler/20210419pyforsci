@@ -22,7 +22,6 @@ def make_date(date_str):
 def add_age_at_inauguration(ws):
     """Add a new column with age of inauguration"""
     new_col = ws.max_column + 1
-    print(new_col)
     ws.cell(row=1, column=new_col).value = 'Age at Inauguration'
     for row in range(2, 47):
         birth_date = make_date(ws.cell(row=row, column=4).value)  # treat date as string

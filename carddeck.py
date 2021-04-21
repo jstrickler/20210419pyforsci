@@ -1,3 +1,6 @@
+"""
+Provide Card and CardDeck classes
+"""
 import random
 from abc import ABCMeta, abstractmethod
 
@@ -5,16 +8,21 @@ from abc import ABCMeta, abstractmethod
 #     print("Woof! Woof!")
 
 class Card:
+    """
+    Represent one playing card.
+    """
     def __init__(self, rank, suit):
         self._rank = rank
         self._suit = suit
 
     @property
     def rank(self):
+        """Card Rank"""
         return self._rank
 
     @property
     def suit(self):
+        """Card suit -- one of Clubs, Diamonds, Hearts, Spades"""
         return self._suit
 
     @property
@@ -53,6 +61,11 @@ class CardDeck(DeckBase):
         random.shuffle(self._cards)
 
     def draw(self):
+        """
+        Draw one card from the deck.
+
+        :return:
+        """
         #TODO: handle empty deck
         return self._cards.pop()
 

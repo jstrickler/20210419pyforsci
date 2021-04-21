@@ -1,16 +1,18 @@
 #!/usr/bin/env python
-
 import timeit
 
 setup_code = 'values = []'  # <1>
 
 test_code_one = '''
-for i in range(10000):
+values = []
+for i in range(1000000):
     values.append(i)
 '''  # <2>
+
 test_code_two = '''
+values = []
 i = 0
-while i < 10000:
+while i < 10000000:
     values.append(i)
     i += 1
 '''  # <2>
