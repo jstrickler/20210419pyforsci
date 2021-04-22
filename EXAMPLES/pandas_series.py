@@ -5,6 +5,7 @@ import pandas as pd
 NUM_VALUES = 10
 index = [chr(i) for i in range(97, 97 + NUM_VALUES)]  # <1>
 print("index:", index, '\n')
+index[2] = 'z'
 
 s1 = pd.Series(np.linspace(1, 5, NUM_VALUES), index=index)  # <2>
 s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # <3>
@@ -12,10 +13,14 @@ s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # <3>
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print("select one element:")
+print(s1['z'], s1['j'], '\n')
+print(s2[2], s1[9], '\n')
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # <4>
 
-print(s1[['a', 'b', 'c']], "\n")  # <4>
+print(s1[['a', 'b', 'z']], "\n")  # <4>
 
 print("slice of elements")
 print(s1['b':'d'], "\n")  # <5>

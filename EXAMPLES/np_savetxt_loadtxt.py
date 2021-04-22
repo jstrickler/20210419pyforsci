@@ -4,13 +4,13 @@ import numpy as np
 sample_data = np.loadtxt(   # <1>
     "../DATA/columns_of_numbers.txt",
     skiprows=1,
-    dtype=float
+    dtype=np.int32
 )
 
 print(sample_data)
 print('-' * 60)
 
-sample_data  /= 10  # <2>
+sample_data  = np.divide(sample_data, 10)  # <2>
 
 float_file_name = 'save_data_float.txt'
 
