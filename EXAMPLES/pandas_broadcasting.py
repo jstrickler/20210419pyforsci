@@ -29,3 +29,8 @@ print_header("Multiply column gamma by 1.5")
 df['gamma'] *= 1.5  # <6>
 print(df)
 print()
+
+print(df['2013-01-02':'2013-01-04'])
+print()
+
+print(df.values)

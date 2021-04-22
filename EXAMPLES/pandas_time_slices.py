@@ -25,3 +25,4 @@ series = pd.Series(data, index=dates)  # <7>
 
 time_slice = series['4/1/2013 10:00:00':'4/1/2013 10:30:00']  # <8>
 print(time_slice)  # 31 values
+
