@@ -27,3 +27,12 @@ a2.shape = 2, 5, 4  # <8>
 
 print(a2)
 print()
+
+a2.shape = 2, 20
+print("a2: {}\n".format(a2))
+a2.shape = 4, 10
+print("a2: {}\n".format(a2))
+a2.shape = 2, 4, 5
+print("a2: {}\n".format(a2))
+a2.shape = 2, 2, 2, 5
+print("a2: {}\n".format(a2))
